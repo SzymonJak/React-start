@@ -1,9 +1,9 @@
 import React from 'react';
 import {NavLink, Link} from 'react-router-dom';
 import styles from './Header.scss';
-// import 'font-awesome/css/font-awesome.min.css';
 import Container from '../Container/Container';
 import Icon from '../Icon/Icon';
+import {settings} from '../../data/dataStore';
 
 class Header extends React.Component {
   render () {
@@ -12,11 +12,12 @@ class Header extends React.Component {
         <Container>
           <div className={styles.wrapper}>
             <Link className={styles.logo} to='/'>
-              <Icon name='carrot' />
+              <Icon name={settings.logoIcon} />
             </Link>
             <nav>
-              <NavLink exact to='/'>Home</NavLink>
-              <NavLink exact to='/info'>Info</NavLink>
+              <NavLink exact to='/' activeClassName='active'>Home</NavLink>
+              <NavLink exact to='/info' activeClassName='active'>Info</NavLink>
+              <NavLink exact to='/faq' activeClassName='active'>FAQ</NavLink>
             </nav>
           </div>
         </Container>
