@@ -92,6 +92,18 @@ const lists = [
     description: 'Interesting things I want to check out!',
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   },
+  {
+    id: 'list-2',
+    title: 'Places to go <sup>soon!</sup>',
+    description: 'Interesting places I want to visit!',
+    image: 'https://images.pexels.com/photos/408503/pexels-photo-408503.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
+  },
+  {
+    id: 'list-3',
+    title: 'Food to try <sup>soon!</sup>',
+    description: 'Delicious food I want to try!',
+    image: 'https://images.pexels.com/photos/277253/pexels-photo-277253.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
+  },
 ];
 
 const columns = [
