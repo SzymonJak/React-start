@@ -1,28 +1,26 @@
 import React from 'react';
-import styles from './Column.scss';
+import styles from './Search.scss';
 import PropTypes from 'prop-types';
 import Card from '../Card/Card';
-import Icon from '../Icon/Icon';
-import { settings } from '../../data/dataStore';
 
 class SearchResult extends React.Component {
 
     static propTypes = {
-      title: PropTypes.string,
-      name: PropTypes.node,
+      // title: PropTypes.string,
+      // name: PropTypes.node,
       cards: PropTypes.array,
-      icon: PropTypes.node,
+      // icon: PropTypes.node,
     }
 
-    static defaultProps = {
-      icon: settings.defaultColumnIcon,
-    }
+    // static defaultProps = {
+    //   icon: settings.defaultColumnIcon,
+    // }
 
     render() {
-      const {title, icon, cards} = this.props;
+      const {cards} = this.props;
       return (
         <section className={styles.component}>
-          <h3 className={styles.title}><span className={styles.icon}><Icon name={icon} /></span>{title}</h3>
+          {/* <h3 className={styles.title}><span className={styles.icon}><Icon name={icon} /></span>{title}</h3> */}
           <div>
             {cards.map(cardData => (
               <Card key={cardData.id} {...cardData} />
