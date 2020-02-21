@@ -5,9 +5,7 @@ export const getCardsForColumn = ({cards}, columnId) => cards.filter(card => car
 // export const getCardsForColumn = ({cards, searchString}, columnId) => cards.filter(card => card.columnId == columnId && new RegExp(searchString, 'i').test(card.title));
 
 // ADD NEW SELECTOR picking cards from all lists
-export const getCardsForSearch = ({cards}, searchString) => cards.filter(card => new RegExp(searchString, 'i').test(card.title)).map(card => ({
-  ...card,
-}));
+export const getCardsForSearch = ({cards}, searchString) => cards.filter(card => new RegExp(searchString, 'i').test(card.title));
 
 
 // action name creator
